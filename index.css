@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-fade {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 389px) {
+    .navbar-brand {
+        font-size: 0.5em;
+    }
+}
+
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+}
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('header.jpg') center/cover no-repeat fixed;
+    margin-top: auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .title {
+    color: white;
+    font-size: 50px;
+}
+
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-top: 10px;
+}
+
+.hero-button:hover {
+    background: white;
+    color: orange;
+    border: none;
+}
+
+.pulset {
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0.3;
+    color: black;
+}
+
+.boxContainer {
+    margin: auto;
+    margin-top: 20%;
+    position: relative;
+    width: 300px;
+    height: 42px;
+    border: 4px solid black;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.elementContainer {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.material-icons {
+    font-size: 25;
+    color: #298889;
+}
+
+@media only screen and (max-width: 320px) {
+    #first,
+    .navbar {
+        width: 100%;
+    }
+}
+
+#first {
+    background-color: red;
+    padding: 2px;
+    text-align: center;
+    font-size: 10vw;
+}
+
+#first span {
+    position: relative;
+    float: right;
+    margin-right: 1%;
+    color: black;
+    background-size: 100% auto;
+}
+
+#first a {
+    color: black;
+}
+
+.navbar-brand img {
+    width: 50px;
+    font-size: 70px;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    background-size: 100% auto;
+}
+
+.navbar-nav {
+    background-size: 20%;
+}
+
+
+/*split screen*/
+
+.rightside {
+    height: 50vh;
+    width: 100%;
+}
+
+.leftside {
+    height: 15vh;
+    width: 100%;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.leftside3 {
+    height: 10vh;
+    width: 100%;
+    background: whitesmoke;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .rightside {
+        display: none;
+    }
+}
+
+.rightside {
+    background-image: url('rightside.jpg');
+    background-size: 670px 700px;
+    background-repeat: no-repeat;
+}
+
+
+/* Top animation*/
+
+.text {
+    margin-top: 14%;
+    margin-left: 4%;
+    font-size: 130%;
+}
+
+.contain {
+    width: 10px;
+}
+
+.word {
+    font-size: 300%;
+    font-weight: bold;
+    float: left;
+    opacity: 0;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+}
+
+.w1 {
+    animation: w1anim 20s infinite;
+}
+
+.w2 {
+    animation: w2anim 20s infinite;
+}
+
+.w3 {
+    animation: w3anim 20s infinite;
+}
+
+.w4 {
+    animation: w4anim 20s infinite;
+}
+
+@keyframes w1anim {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+}
+
+@keyframes w2anim {
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes w3anim {
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes w4anim {
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+
+/*Search bar*/
+
+.leftside2 {
+    height: 25vh;
+    background-color: whitesmoke;
+}
+
+.searchbar {
+    width: 100%;
+}
+
+form {
+    margin-top: 0.5%;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*Number*/
+
+.number {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bg.jpg) center/cover no-repeat fixed;
+    padding: 60px 0;
+    color: whitesmoke;
+}
+
+.number:hover {
+    color: orange;
+}
+
+.number .bi {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.number .fa {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.number h3 {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+    #number {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 512px) {
+    #number {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/*mobile*/
+
+.lastrightside {
+    width: 100%;
+    height: 400px;
+    background-image: url('mobile.PNG');
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+}
+
+.lastleftside {
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.lastleftside2 {
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.lastleftside3 {
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+    .lastrightside {
+        display: none;
+    }
+}
+
+
+/*FOOTER*/
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: black;
+    background-color: darkturquoise;
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footer-left {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-right>* {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer-left p {
+    padding-right: 20%;
+}
+
+.social a {
+    background: #364a62;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social a i {
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-right>* {
+        flex: 1;
+    }
+    .footer-left {
+        flex: 1 0px;
+    }
+    .footer-right {
+        flex: 2 0px;
+    }
+}
